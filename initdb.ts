@@ -1,5 +1,7 @@
 import Database from 'better-sqlite3';
+
 const db = new Database('meals.db');
+
 import { type Meal } from '@/types/meals';
 
 const dummyMeals: Meal[] = [

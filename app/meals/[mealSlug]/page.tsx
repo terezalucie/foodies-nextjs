@@ -11,6 +11,7 @@ export default async function MealDetailsPage({ params }: MealDetailsPageProps) 
 
     const { mealSlug } = await params
     const meal = getMeal(mealSlug)
+    
     if (!meal) {
         notFound()
     }
